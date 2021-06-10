@@ -1,0 +1,2 @@
+# Yocto on WSL2
+ 
