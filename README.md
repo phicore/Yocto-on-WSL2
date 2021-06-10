@@ -47,12 +47,17 @@ So here are the steps:
 
 
 ## Yocto
-From here on we can follow the Yocto tutorial.
-After installing all the Yocto base image the .vhdx file that represent the linux file system has tremendously grown. This was the reason I could not do this on my boot drive.
+From here on we can start to follow the excellent Yocto tutorial from Christophe Blaess.
+
+...
+
+After installing all the Yocto base image the .vhdx file that represent the linux file system has tremendously grown (over 40GB). This was the reason I could not do this on my boot drive.
+
+![alt text](https://github.com/phicore/Yocto-on-WSL2/blob/main/vhdx-size.png "vhdx file size")
 
 ## Testing the image
 
-When launching the command to test the image ( runqemu qemux86-64 )
+When launching the command to test the image (runqemu qemux86-64)
 
 It is clear that we miss a X11 windows server as the qemu runs under SDL+X11
 
