@@ -5,14 +5,15 @@ I wanted to try running on WSL instead of a real linux.
 
 
 ## Introduction
-This document assumes WSL is already installed.
-The yocto part of this experiment is based on:
+This document assumes WSL2 is already installed. 
+I used WSL2 on Windows 10 2004.
+The Yocto part of this experiment is based on:
 
 https://www.blaess.fr/christophe/yocto-lab/sequence-I-2/index.html
 
 
 ## Installing the WSL linux distribution on a non-boot drive
-The first hurdle I had to overocme was to not install the linux distribution the standard way because when using the Microsoft store to install ubuntu in WSL it is installed on the boot drive under the current user AppData folder.
+The first hurdle I had to overcome was to not install the linux distribution the standard way because when using the Microsoft Store to install Ubuntu in WSL it is installed on the boot drive under the current user AppData folder.
 
 Knowing the size Yocto can use to create image, I knew this was not practical for me.
 
@@ -38,7 +39,7 @@ So here are the steps:
   
   `cd .\Ubuntu\`
   
-- Looking in the folder with the windows Explorer one can see a .vhdx file that is the linux file system.
+- Looking in the folder with the Windows Explorer one can see a .vhdx file that is the linux file system.
 
 - Run the executable to launch linux:
   `.\ubuntu1804.exe`
@@ -68,7 +69,7 @@ In Windows(not WSL), download and install MobaXterm (free version): https://moba
 Download the portable version and add it for instance in the WSL folder.
 
 Launch MobaXterm_Personal_X.x.exe, it shall show the installed distributions, select the one you need and a terminal is launched.
-
+![alt text](https://github.com/phicore/Yocto-on-WSL2/blob/main/MobaXTerm.png "X11 server")
 
 This time when launching a sample X11 app like xeyes, the application runs
 
@@ -79,5 +80,9 @@ repeat the source ... command
 And then:
  runqemu qemux86-64
 
+![alt text](https://github.com/phicore/Yocto-on-WSL2/blob/main/quemu-success.png "qemu-sdl running and poky has booted")
+
 Now the qemu windows is correctly running and the image build with Yocto is booting inside qemu
+
+From here on Windows 10 can be used to host a ycoto developement (at least for the image generation steps)
 
