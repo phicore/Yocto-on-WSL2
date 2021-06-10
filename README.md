@@ -64,7 +64,7 @@ It is clear that we miss a X11 windows server as the qemu runs under SDL+X11
 
 ## Installing a X11 server 
 
-In Windows(not WSL), download and install MobaXterm (free version): https://mobaxterm.mobatek.net/download.html
+In Windows (not WSL), download and install MobaXterm: https://mobaxterm.mobatek.net/download.html
 
 Download the portable version and add it for instance in the WSL folder.
 
@@ -75,7 +75,7 @@ This time when launching a sample X11 app like xeyes, the application runs
 
 
 In the terminal: 
-repeat the source ... command from the Ycoto tutorial.
+repeat the source ... command from the Yocto tutorial.
 
 And then:
 
@@ -85,5 +85,5 @@ And then:
 
 Now the qemu windows is correctly running and the image build with Yocto is booting inside qemu
 
-From here on Windows 10 can be used to host a ycoto developement (at least for the image generation steps)
+From here on Windows 10 can be used to host a Yocto developement (at least for the image generation steps)
 
