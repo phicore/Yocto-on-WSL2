@@ -75,10 +75,11 @@ This time when launching a sample X11 app like xeyes, the application runs
 
 
 In the terminal: 
-repeat the source ... command
+repeat the source ... command from the Ycoto tutorial.
 
 And then:
- runqemu qemux86-64
+
+ `runqemu qemux86-64`
 
 ![alt text](https://github.com/phicore/Yocto-on-WSL2/blob/main/quemu-success.png "qemu-sdl running and poky has booted")
 
